@@ -1,0 +1,6 @@
+RewriteEngine on
+
+
+RewriteRule ^Movies/buy/([0-9]+)/?$ index.php?controller=Movies&method=buy&id=$1 [NC,L]
+RewriteRule ^([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$ index.php?controller=$1&method=$2 [NC,L]
+RewriteRule ^$ index.php?controller=Movies&method=get
